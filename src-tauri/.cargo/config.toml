@@ -1,0 +1,5 @@
+[build]
+# Use the correct macOS SDK
+[target.aarch64-apple-darwin]
+rustflags = ["-C", "link-arg=-isysroot", "-C", "link-arg=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk"]
+

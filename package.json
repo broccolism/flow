@@ -4,10 +4,11 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "check-versions": "node check-versions.js",
+    "dev": "npm run check-versions && vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "tauri": "tauri"
+    "tauri": "bash setup-env.sh tauri"
   },
   "dependencies": {
     "@tauri-apps/api": "^2.9.1",
@@ -23,6 +24,6 @@
     "@types/react-dom": "^19.1.6",
     "@vitejs/plugin-react": "^4.6.0",
     "typescript": "~5.8.3",
-    "vite": "^7.0.4"
+    "vite": "^6.0.0"
   }
 }
